@@ -15,7 +15,7 @@
     cursor: pointer;
     padding: 50px 10px;
  }
-nav{
+header nav{
     display: flex;
     justify-content:  space-evenly;
     background-color: rgb(241, 236, 236);
@@ -224,6 +224,7 @@ textarea{
     padding: 20px;
     flex-wrap: wrap;
     z-index: 1;
+    background-color: white;
 }
 #footer nav ul {
     padding-top: 30px;
