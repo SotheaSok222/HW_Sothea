@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .deafult_padding{
+    padding: 0 50px;
+} */
+#logo {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 50px 10px;
+ }
+nav{
+    display: flex;
+    justify-content:  space-evenly;
+    background-color: rgb(241, 236, 236);
+    flex-wrap: wrap;
+}
+nav .menu {
+    display: flex;
+    column-gap: 12px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+nav .menu :nth-child(2){
+    padding: 10px 20px;
+}
+nav .menu :nth-child(3){
+    padding: 10px 0;
+}
+nav .menu :nth-child(4){
+    padding: 10px 0;
+}
+nav .menu :nth-child(5){
+   padding: 10px 0;
+}
+nav .menu :nth-child(6){
+    padding: 10px 0;
+}
+ nav .menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+nav .social{
+    display: flex;
+    column-gap: 50px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 290px;
+}
+ nav .social li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.container .topic {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 30px;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+h1{
+    padding: 15px 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container .imgTopic{
+    flex-wrap: wrap;
+    width: 50%;
+    height: 450px;
+    
+}
+.topicAB{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.storeImg{
+    width: 30%;
+    flex-wrap: wrap;
+    height: 450px;
+}
+button{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.caro{
+    display:flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.caro img{
+    width: 25%;
+    height: 250px;
+
+}
+.dropdownBtn{
+    display: none;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight:700;
+}
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr  1fr  ;
+}
+.feature .box {
+    border: 2px solid grey;
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.feature i{
+    display: flex;
+    justify-content: center;
+    margin-top:  50px;
+    font-weight: 900;
+    font-size: 50px;
+    flex-wrap: wrap;
+}
+.box h3{
+     text-align: center;
+    font-size: 50px;
+    font-weight:700;
+}
+.box p{
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.warpform{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 0;
+}
+.warpinput{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; 
+}
+.warpinput input{
+    height: 30px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    resize: horizontal;
+    width: 200px;
+}
+textarea{
+    font-size: 30px;
+}
+.gropradio{
+    margin-top: 30px;
+}
+.gropradio label{
+    
+    margin-right: 10px;
+}
+.gropradio input{
+    margin-left: 10px;
+}
+.groupselect{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+textarea{
+    resize: none;
+}
+.groupselect label{
+    margin-right: 30px;
+}
+.groupselect select{
+    height: 30px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+.warpRobot{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.warpRobot div{
+    margin-top: 20px;
+}
+#footer nav{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+#footer nav ul {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+#footer nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;  
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 20px;
+}
+#footer div{
+    text-align: center;
+    padding: 30px;
+}
+@media only screen and (max-width: 850px) {
+    .caro .carimg{
+        position: absolute;
+        float: left;
+    }
+    .caro img {
+        position: relative;
+        left: 150px;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .warpinput input{
+        width: 100px;
+    }
+    .social{
+        position: absolute;
+        left: -99999px;
+    }
+    .storeImg {
+            width: 50%;
+    
+    height: 450px;
+    }
+}
+@media only screen and (max-width: 600px) {
+   .menu{
+    display: none;
+   }
+}
